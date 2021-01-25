@@ -19,13 +19,8 @@ var nameInputEl = document.querySelector("#username");
 
 var formSubmitHandler = function(event) {
   event.preventDefault();
-  console.log(event);
-};
-
-// get value from input element
-
-
-var username = nameInputEl.value.trim();
+  
+  var username = nameInputEl.value.trim();
 
 if (username) {
   getUserRepos(username);
@@ -35,6 +30,8 @@ if (username) {
   console.log(data)
 
 }
+};
+
  
 
 
